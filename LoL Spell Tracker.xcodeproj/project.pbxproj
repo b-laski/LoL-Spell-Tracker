@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D7BE51022AECA2100B02558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE50F22AECA2100B02558 /* AppDelegate.swift */; };
+		1D7BE51222AECA2100B02558 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE51122AECA2100B02558 /* MainViewController.swift */; };
+		1D7BE51722AECA2500B02558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE51622AECA2500B02558 /* Assets.xcassets */; };
+		1D7BE51A22AECA2500B02558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE51822AECA2500B02558 /* LaunchScreen.storyboard */; };
+		1D7BE54522AED2F900B02558 /* LoL_Spell_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE54422AED2F900B02558 /* LoL_Spell_TrackerUITests.swift */; };
+		1D7BE54922AED32F00B02558 /* ModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE54822AED32F00B02558 /* ModelsTest.swift */; };
+		1D7BE54B22AED88F00B02558 /* SummonerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE54A22AED88F00B02558 /* SummonerModel.swift */; };
+		1D7BE54F22AEDC1600B02558 /* SummonerJsonModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE54E22AEDC1600B02558 /* SummonerJsonModel.json */; };
+		1D7BE55222AEE7C200B02558 /* SpectatorJsonModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE55122AEE7C200B02558 /* SpectatorJsonModel.json */; };
+		1D7BE55422AEE82800B02558 /* SpactatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55322AEE82800B02558 /* SpactatorModel.swift */; };
+		1D7BE55622AEE8CF00B02558 /* BannedChampionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55522AEE8CF00B02558 /* BannedChampionModel.swift */; };
+		1D7BE55822AEE8F000B02558 /* ObserversModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55722AEE8F000B02558 /* ObserversModel.swift */; };
+		1D7BE55A22AEE91600B02558 /* ParticipantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55922AEE91600B02558 /* ParticipantModel.swift */; };
+		1D7BE55C22AEE93E00B02558 /* PerksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55B22AEE93E00B02558 /* PerksModel.swift */; };
+		1D7BE56122B0344700B02558 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56022B0344700B02558 /* NetworkErrors.swift */; };
+		1D7BE56322B039BB00B02558 /* SummonerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56222B039BB00B02558 /* SummonerViewModelTests.swift */; };
+		1D7BE56522B03ADA00B02558 /* SummonerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56422B03ADA00B02558 /* SummonerViewModel.swift */; };
+		1D7BE56822B03C7E00B02558 /* SummonerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56722B03C7E00B02558 /* SummonerProvider.swift */; };
+		1D7BE56B22B03E5800B02558 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56A22B03E5800B02558 /* String.swift */; };
+		1D7BE56D22B3C73300B02558 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56C22B3C73300B02558 /* ErrorModel.swift */; };
+		1D7BE56F22B3C7AC00B02558 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56E22B3C7AC00B02558 /* Response.swift */; };
+		3683A4AD5649A71234116E59 /* Pods_LoL_Spell_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFD7AA01831AD0961D932CB /* Pods_LoL_Spell_TrackerUITests.framework */; };
+		C4A8690D0E2A74121D775A01 /* Pods_LoL_Spell_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B1F1AFDCE192106CF9B10C /* Pods_LoL_Spell_TrackerTests.framework */; };
+		F656779A509AEAD11FF55309 /* Pods_LoL_Spell_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DC740C350008CFA73F1EE6 /* Pods_LoL_Spell_Tracker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D7BE52122AECA2500B02558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D7BE50422AECA2100B02558 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D7BE50B22AECA2100B02558;
+			remoteInfo = "LoL Spell Tracker";
+		};
+		1D7BE52C22AECA2500B02558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D7BE50422AECA2100B02558 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D7BE50B22AECA2100B02558;
+			remoteInfo = "LoL Spell Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09BE35158CD7E1DF335491E5 /* Pods-LoL Spell TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell TrackerTests/Pods-LoL Spell TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D7BE50C22AECA2100B02558 /* LoL Spell Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoL Spell Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7BE50F22AECA2100B02558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D7BE51122AECA2100B02558 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1D7BE51622AECA2500B02558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D7BE51922AECA2500B02558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D7BE51B22AECA2500B02558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7BE52022AECA2500B02558 /* LoL Spell TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoL Spell TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7BE52622AECA2500B02558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7BE52B22AECA2500B02558 /* LoL Spell TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoL Spell TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7BE53122AECA2500B02558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7BE54422AED2F900B02558 /* LoL_Spell_TrackerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoL_Spell_TrackerUITests.swift; sourceTree = "<group>"; };
+		1D7BE54822AED32F00B02558 /* ModelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTest.swift; sourceTree = "<group>"; };
+		1D7BE54A22AED88F00B02558 /* SummonerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerModel.swift; sourceTree = "<group>"; };
+		1D7BE54E22AEDC1600B02558 /* SummonerJsonModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SummonerJsonModel.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		1D7BE55122AEE7C200B02558 /* SpectatorJsonModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SpectatorJsonModel.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		1D7BE55322AEE82800B02558 /* SpactatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpactatorModel.swift; sourceTree = "<group>"; };
+		1D7BE55522AEE8CF00B02558 /* BannedChampionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannedChampionModel.swift; sourceTree = "<group>"; };
+		1D7BE55722AEE8F000B02558 /* ObserversModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserversModel.swift; sourceTree = "<group>"; };
+		1D7BE55922AEE91600B02558 /* ParticipantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantModel.swift; sourceTree = "<group>"; };
+		1D7BE55B22AEE93E00B02558 /* PerksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerksModel.swift; sourceTree = "<group>"; };
+		1D7BE56022B0344700B02558 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		1D7BE56222B039BB00B02558 /* SummonerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerViewModelTests.swift; sourceTree = "<group>"; };
+		1D7BE56422B03ADA00B02558 /* SummonerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerViewModel.swift; sourceTree = "<group>"; };
+		1D7BE56722B03C7E00B02558 /* SummonerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerProvider.swift; sourceTree = "<group>"; };
+		1D7BE56A22B03E5800B02558 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1D7BE56C22B3C73300B02558 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		1D7BE56E22B3C7AC00B02558 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		36A964278C58798D5A17B97B /* Pods-LoL Spell TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell TrackerTests/Pods-LoL Spell TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		50351982EE3A78315A69CAD2 /* Pods-LoL Spell Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		7149B5DF64BA3884CB9E5BD0 /* Pods-LoL Spell Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		724F556C3AD2F74E8A3A2665 /* Pods-LoL Spell TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell TrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell TrackerUITests/Pods-LoL Spell TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DFD7AA01831AD0961D932CB /* Pods_LoL_Spell_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoL_Spell_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B1F1AFDCE192106CF9B10C /* Pods_LoL_Spell_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoL_Spell_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EACD6692A852015D71948D /* Pods-LoL Spell TrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell TrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell TrackerUITests/Pods-LoL Spell TrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8DC740C350008CFA73F1EE6 /* Pods_LoL_Spell_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoL_Spell_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D7BE50922AECA2100B02558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F656779A509AEAD11FF55309 /* Pods_LoL_Spell_Tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7BE51D22AECA2500B02558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A8690D0E2A74121D775A01 /* Pods_LoL_Spell_TrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7BE52822AECA2500B02558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3683A4AD5649A71234116E59 /* Pods_LoL_Spell_TrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D7BE50322AECA2100B02558 = {
+			isa = PBXGroup;
+			children = (
+				1D7BE50E22AECA2100B02558 /* LoL Spell Tracker */,
+				1D7BE52322AECA2500B02558 /* LoL Spell TrackerTests */,
+				1D7BE52E22AECA2500B02558 /* LoL Spell TrackerUITests */,
+				1D7BE50D22AECA2100B02558 /* Products */,
+				A5A5D13400C46293C0953021 /* Pods */,
+				5117E5321CFB5AB27DE54BB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D7BE50D22AECA2100B02558 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE50C22AECA2100B02558 /* LoL Spell Tracker.app */,
+				1D7BE52022AECA2500B02558 /* LoL Spell TrackerTests.xctest */,
+				1D7BE52B22AECA2500B02558 /* LoL Spell TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D7BE50E22AECA2100B02558 /* LoL Spell Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE50F22AECA2100B02558 /* AppDelegate.swift */,
+				1D7BE54022AECAB600B02558 /* View */,
+				1D7BE53F22AECAAC00B02558 /* ViewController */,
+				1D7BE53E22AECAA500B02558 /* ViewModel */,
+				1D7BE53D22AECA9E00B02558 /* Model */,
+				1D7BE56922B03E4B00B02558 /* Extensions */,
+				1D7BE56622B03C6B00B02558 /* Providers */,
+				1D7BE54122AECAD500B02558 /* Utils */,
+				1D7BE51622AECA2500B02558 /* Assets.xcassets */,
+				1D7BE51822AECA2500B02558 /* LaunchScreen.storyboard */,
+				1D7BE51B22AECA2500B02558 /* Info.plist */,
+			);
+			path = "LoL Spell Tracker";
+			sourceTree = "<group>";
+		};
+		1D7BE52322AECA2500B02558 /* LoL Spell TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE54E22AEDC1600B02558 /* SummonerJsonModel.json */,
+				1D7BE55122AEE7C200B02558 /* SpectatorJsonModel.json */,
+				1D7BE54722AED31700B02558 /* ModelParser */,
+				1D7BE55F22B0319000B02558 /* NetworkManagerTest */,
+				1D7BE52622AECA2500B02558 /* Info.plist */,
+			);
+			path = "LoL Spell TrackerTests";
+			sourceTree = "<group>";
+		};
+		1D7BE52E22AECA2500B02558 /* LoL Spell TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE54422AED2F900B02558 /* LoL_Spell_TrackerUITests.swift */,
+				1D7BE53122AECA2500B02558 /* Info.plist */,
+			);
+			path = "LoL Spell TrackerUITests";
+			sourceTree = "<group>";
+		};
+		1D7BE53D22AECA9E00B02558 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE54A22AED88F00B02558 /* SummonerModel.swift */,
+				1D7BE55322AEE82800B02558 /* SpactatorModel.swift */,
+				1D7BE55522AEE8CF00B02558 /* BannedChampionModel.swift */,
+				1D7BE55722AEE8F000B02558 /* ObserversModel.swift */,
+				1D7BE55922AEE91600B02558 /* ParticipantModel.swift */,
+				1D7BE55B22AEE93E00B02558 /* PerksModel.swift */,
+				1D7BE56C22B3C73300B02558 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D7BE53E22AECAA500B02558 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE56422B03ADA00B02558 /* SummonerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1D7BE53F22AECAAC00B02558 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE51122AECA2100B02558 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1D7BE54022AECAB600B02558 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D7BE54122AECAD500B02558 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE56022B0344700B02558 /* NetworkErrors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1D7BE54722AED31700B02558 /* ModelParser */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE54822AED32F00B02558 /* ModelsTest.swift */,
+			);
+			path = ModelParser;
+			sourceTree = "<group>";
+		};
+		1D7BE55F22B0319000B02558 /* NetworkManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE56222B039BB00B02558 /* SummonerViewModelTests.swift */,
+			);
+			path = NetworkManagerTest;
+			sourceTree = "<group>";
+		};
+		1D7BE56622B03C6B00B02558 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE56722B03C7E00B02558 /* SummonerProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		1D7BE56922B03E4B00B02558 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BE56A22B03E5800B02558 /* String.swift */,
+				1D7BE56E22B3C7AC00B02558 /* Response.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5117E5321CFB5AB27DE54BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8DC740C350008CFA73F1EE6 /* Pods_LoL_Spell_Tracker.framework */,
+				B5B1F1AFDCE192106CF9B10C /* Pods_LoL_Spell_TrackerTests.framework */,
+				7DFD7AA01831AD0961D932CB /* Pods_LoL_Spell_TrackerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5A5D13400C46293C0953021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50351982EE3A78315A69CAD2 /* Pods-LoL Spell Tracker.debug.xcconfig */,
+				7149B5DF64BA3884CB9E5BD0 /* Pods-LoL Spell Tracker.release.xcconfig */,
+				09BE35158CD7E1DF335491E5 /* Pods-LoL Spell TrackerTests.debug.xcconfig */,
+				36A964278C58798D5A17B97B /* Pods-LoL Spell TrackerTests.release.xcconfig */,
+				D8EACD6692A852015D71948D /* Pods-LoL Spell TrackerUITests.debug.xcconfig */,
+				724F556C3AD2F74E8A3A2665 /* Pods-LoL Spell TrackerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D7BE50B22AECA2100B02558 /* LoL Spell Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D7BE53422AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell Tracker" */;
+			buildPhases = (
+				4B27EF42F944DCF2587E5959 /* [CP] Check Pods Manifest.lock */,
+				1D7BE50822AECA2100B02558 /* Sources */,
+				1D7BE50922AECA2100B02558 /* Frameworks */,
+				1D7BE50A22AECA2100B02558 /* Resources */,
+				1A43785920DAEB3868E98D72 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoL Spell Tracker";
+			productName = "LoL Spell Tracker";
+			productReference = 1D7BE50C22AECA2100B02558 /* LoL Spell Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D7BE51F22AECA2500B02558 /* LoL Spell TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D7BE53722AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell TrackerTests" */;
+			buildPhases = (
+				1357192394204D0015E0390B /* [CP] Check Pods Manifest.lock */,
+				1D7BE51C22AECA2500B02558 /* Sources */,
+				1D7BE51D22AECA2500B02558 /* Frameworks */,
+				1D7BE51E22AECA2500B02558 /* Resources */,
+				E0F15EFB5CC5721711BD50EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D7BE52222AECA2500B02558 /* PBXTargetDependency */,
+			);
+			name = "LoL Spell TrackerTests";
+			productName = "LoL Spell TrackerTests";
+			productReference = 1D7BE52022AECA2500B02558 /* LoL Spell TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D7BE52A22AECA2500B02558 /* LoL Spell TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D7BE53A22AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell TrackerUITests" */;
+			buildPhases = (
+				89265C3C45D6339550FAF301 /* [CP] Check Pods Manifest.lock */,
+				1D7BE52722AECA2500B02558 /* Sources */,
+				1D7BE52822AECA2500B02558 /* Frameworks */,
+				1D7BE52922AECA2500B02558 /* Resources */,
+				496B36A305CD5964288B9190 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D7BE52D22AECA2500B02558 /* PBXTargetDependency */,
+			);
+			name = "LoL Spell TrackerUITests";
+			productName = "LoL Spell TrackerUITests";
+			productReference = 1D7BE52B22AECA2500B02558 /* LoL Spell TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D7BE50422AECA2100B02558 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Bartłomiej Łaski";
+				TargetAttributes = {
+					1D7BE50B22AECA2100B02558 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1D7BE51F22AECA2500B02558 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 1D7BE50B22AECA2100B02558;
+					};
+					1D7BE52A22AECA2500B02558 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 1D7BE50B22AECA2100B02558;
+					};
+				};
+			};
+			buildConfigurationList = 1D7BE50722AECA2100B02558 /* Build configuration list for PBXProject "LoL Spell Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D7BE50322AECA2100B02558;
+			productRefGroup = 1D7BE50D22AECA2100B02558 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D7BE50B22AECA2100B02558 /* LoL Spell Tracker */,
+				1D7BE51F22AECA2500B02558 /* LoL Spell TrackerTests */,
+				1D7BE52A22AECA2500B02558 /* LoL Spell TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D7BE50A22AECA2100B02558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7BE51A22AECA2500B02558 /* LaunchScreen.storyboard in Resources */,
+				1D7BE51722AECA2500B02558 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7BE51E22AECA2500B02558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7BE54F22AEDC1600B02558 /* SummonerJsonModel.json in Resources */,
+				1D7BE55222AEE7C200B02558 /* SpectatorJsonModel.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7BE52922AECA2500B02558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1357192394204D0015E0390B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoL Spell TrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A43785920DAEB3868E98D72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/moa/moa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/moa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		496B36A305CD5964288B9190 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell TrackerUITests/Pods-LoL Spell TrackerUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell TrackerUITests/Pods-LoL Spell TrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B27EF42F944DCF2587E5959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoL Spell Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89265C3C45D6339550FAF301 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoL Spell TrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F15EFB5CC5721711BD50EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell TrackerTests/Pods-LoL Spell TrackerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell TrackerTests/Pods-LoL Spell TrackerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D7BE50822AECA2100B02558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7BE54B22AED88F00B02558 /* SummonerModel.swift in Sources */,
+				1D7BE55C22AEE93E00B02558 /* PerksModel.swift in Sources */,
+				1D7BE55822AEE8F000B02558 /* ObserversModel.swift in Sources */,
+				1D7BE55422AEE82800B02558 /* SpactatorModel.swift in Sources */,
+				1D7BE56822B03C7E00B02558 /* SummonerProvider.swift in Sources */,
+				1D7BE56D22B3C73300B02558 /* ErrorModel.swift in Sources */,
+				1D7BE51222AECA2100B02558 /* MainViewController.swift in Sources */,
+				1D7BE56F22B3C7AC00B02558 /* Response.swift in Sources */,
+				1D7BE56B22B03E5800B02558 /* String.swift in Sources */,
+				1D7BE51022AECA2100B02558 /* AppDelegate.swift in Sources */,
+				1D7BE56522B03ADA00B02558 /* SummonerViewModel.swift in Sources */,
+				1D7BE55A22AEE91600B02558 /* ParticipantModel.swift in Sources */,
+				1D7BE55622AEE8CF00B02558 /* BannedChampionModel.swift in Sources */,
+				1D7BE56122B0344700B02558 /* NetworkErrors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7BE51C22AECA2500B02558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7BE56322B039BB00B02558 /* SummonerViewModelTests.swift in Sources */,
+				1D7BE54922AED32F00B02558 /* ModelsTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7BE52722AECA2500B02558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7BE54522AED2F900B02558 /* LoL_Spell_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D7BE52222AECA2500B02558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D7BE50B22AECA2100B02558 /* LoL Spell Tracker */;
+			targetProxy = 1D7BE52122AECA2500B02558 /* PBXContainerItemProxy */;
+		};
+		1D7BE52D22AECA2500B02558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D7BE50B22AECA2100B02558 /* LoL Spell Tracker */;
+			targetProxy = 1D7BE52C22AECA2500B02558 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D7BE51822AECA2500B02558 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D7BE51922AECA2500B02558 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D7BE53222AECA2500B02558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D7BE53322AECA2500B02558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D7BE53522AECA2500B02558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50351982EE3A78315A69CAD2 /* Pods-LoL Spell Tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYC6AKT84F;
+				INFOPLIST_FILE = "LoL Spell Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D7BE53622AECA2500B02558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7149B5DF64BA3884CB9E5BD0 /* Pods-LoL Spell Tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYC6AKT84F;
+				INFOPLIST_FILE = "LoL Spell Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D7BE53822AECA2500B02558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09BE35158CD7E1DF335491E5 /* Pods-LoL Spell TrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYC6AKT84F;
+				INFOPLIST_FILE = "LoL Spell TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoL Spell Tracker.app/LoL Spell Tracker";
+			};
+			name = Debug;
+		};
+		1D7BE53922AECA2500B02558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A964278C58798D5A17B97B /* Pods-LoL Spell TrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYC6AKT84F;
+				INFOPLIST_FILE = "LoL Spell TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoL Spell Tracker.app/LoL Spell Tracker";
+			};
+			name = Release;
+		};
+		1D7BE53B22AECA2500B02558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EACD6692A852015D71948D /* Pods-LoL Spell TrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYC6AKT84F;
+				INFOPLIST_FILE = "LoL Spell TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LoL Spell Tracker";
+			};
+			name = Debug;
+		};
+		1D7BE53C22AECA2500B02558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724F556C3AD2F74E8A3A2665 /* Pods-LoL Spell TrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYC6AKT84F;
+				INFOPLIST_FILE = "LoL Spell TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LoL Spell Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D7BE50722AECA2100B02558 /* Build configuration list for PBXProject "LoL Spell Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7BE53222AECA2500B02558 /* Debug */,
+				1D7BE53322AECA2500B02558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D7BE53422AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7BE53522AECA2500B02558 /* Debug */,
+				1D7BE53622AECA2500B02558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D7BE53722AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7BE53822AECA2500B02558 /* Debug */,
+				1D7BE53922AECA2500B02558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D7BE53A22AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7BE53B22AECA2500B02558 /* Debug */,
+				1D7BE53C22AECA2500B02558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D7BE50422AECA2100B02558 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_LoL_Spell_TrackerUITests {
+  umbrella header "Pods-LoL Spell TrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

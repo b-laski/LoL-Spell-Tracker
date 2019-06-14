@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (4.8.2)
+  - moa (11.0.1)
+  - Mockingjay (2.0.1):
+    - Mockingjay/Core (= 2.0.1)
+    - Mockingjay/XCTest (= 2.0.1)
+  - Mockingjay/Core (2.0.1):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.1):
+    - Mockingjay/Core
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+  - Result (4.1.0)
+  - SnapKit (5.0.0)
+  - SwiftLint (0.33.0)
+  - URITemplate (2.0.3)
+
+DEPENDENCIES:
+  - moa (~> 11.0)
+  - Mockingjay
+  - Moya (~> 13.0)
+  - Nimble
+  - Quick
+  - SnapKit (~> 5.0.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - moa
+    - Mockingjay
+    - Moya
+    - Nimble
+    - Quick
+    - Result
+    - SnapKit
+    - SwiftLint
+    - URITemplate
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  moa: a26c4e97c7ac9345e87c4bb999e85116c8ec0310
+  Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+
+PODFILE CHECKSUM: fb0473b5ae5b182f33bb8083af280c7d760259d0
+
+COCOAPODS: 1.5.3
