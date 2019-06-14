@@ -95,3 +95,33 @@ class SpactatorModelTest: QuickSpec {
         }
     }
 }
+
+class ErrorModelTest: QuickSpec {
+    override func spec() {
+        describe("Error Model Test") {
+            let bundle = Bundle(for: type(of: self))
+            let path = bundle.path(forResource: "ErrorJsonMode", ofType: "json")
+            
+            it("File is exist", closure: {
+                expect(path?.isEmpty).to(equal(false))
+            })
+            
+            it("Parse json to model", closure: {
+                do {
+                    let url = URL(fileURLWithPath: path!)
+                    let json = try Data(contentsOf: url)
+                    
+                    let decode = JSONDecoder()
+                    let model = try decode.decode(ErrorModel.self, from: json)
+                    
+                    expect(model).notTo(beNil())
+                    expect(model.statusCode).to(equal(400))
+                    expect(model.message).to(equal("Bad Request - Exception decrypting"))
+                    
+                } catch let error {
+                    expect(error.localizedDescription).notTo(equal(nil))
+                }
+            })
+        }
+    }
+}

@@ -28,6 +28,7 @@
 		1D7BE56B22B03E5800B02558 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56A22B03E5800B02558 /* String.swift */; };
 		1D7BE56D22B3C73300B02558 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56C22B3C73300B02558 /* ErrorModel.swift */; };
 		1D7BE56F22B3C7AC00B02558 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56E22B3C7AC00B02558 /* Response.swift */; };
+		1D7BE57322B3D6F900B02558 /* ErrorJsonMode.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE57222B3D6F900B02558 /* ErrorJsonMode.json */; };
 		3683A4AD5649A71234116E59 /* Pods_LoL_Spell_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFD7AA01831AD0961D932CB /* Pods_LoL_Spell_TrackerUITests.framework */; };
 		C4A8690D0E2A74121D775A01 /* Pods_LoL_Spell_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B1F1AFDCE192106CF9B10C /* Pods_LoL_Spell_TrackerTests.framework */; };
 		F656779A509AEAD11FF55309 /* Pods_LoL_Spell_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DC740C350008CFA73F1EE6 /* Pods_LoL_Spell_Tracker.framework */; };
@@ -79,6 +80,7 @@
 		1D7BE56A22B03E5800B02558 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		1D7BE56C22B3C73300B02558 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		1D7BE56E22B3C7AC00B02558 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1D7BE57222B3D6F900B02558 /* ErrorJsonMode.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ErrorJsonMode.json; sourceTree = "<group>"; };
 		36A964278C58798D5A17B97B /* Pods-LoL Spell TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell TrackerTests/Pods-LoL Spell TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		50351982EE3A78315A69CAD2 /* Pods-LoL Spell Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		7149B5DF64BA3884CB9E5BD0 /* Pods-LoL Spell Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				1D7BE54E22AEDC1600B02558 /* SummonerJsonModel.json */,
 				1D7BE55122AEE7C200B02558 /* SpectatorJsonModel.json */,
+				1D7BE57222B3D6F900B02558 /* ErrorJsonMode.json */,
 				1D7BE54722AED31700B02558 /* ModelParser */,
 				1D7BE55F22B0319000B02558 /* NetworkManagerTest */,
 				1D7BE52622AECA2500B02558 /* Info.plist */,
@@ -400,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7BE57322B3D6F900B02558 /* ErrorJsonMode.json in Resources */,
 				1D7BE54F22AEDC1600B02558 /* SummonerJsonModel.json in Resources */,
 				1D7BE55222AEE7C200B02558 /* SpectatorJsonModel.json in Resources */,
 			);
