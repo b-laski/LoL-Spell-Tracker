@@ -1,8 +1,8 @@
 //
-//  SummonerViewModelTests.swift
+//  SpectatorViewModelTest.swift
 //  LoL Spell TrackerTests
 //
-//  Created by Bartłomiej Łaski on 11/06/2019.
+//  Created by Bartłomiej Łaski on 17/06/2019.
 //  Copyright © 2019 Bartłomiej Łaski. All rights reserved.
 //
 
@@ -13,9 +13,9 @@ import Mockingjay
 
 @testable import LoL_Spell_Tracker
 
-class SummonerViewModelTests: QuickSpec {
+class SpectatorViewModelTest: QuickSpec {
     override func spec() {
-        describe("SummonerViewModel Test") {
+        describe("SpectatorViewModel Test") {
             
             let body: [Int: [String: [String: Any]]] =
                 [
@@ -30,65 +30,65 @@ class SummonerViewModelTests: QuickSpec {
                     502: ["status": ["status_code": 502, "message": "Bad gateway"]],
                     503: ["status": ["status_code": 503, "message": "Service unavailable"]],
                     504: ["status": ["status_code": 504, "message": "Gateway timeout"]],
-                ]
+            ]
             
             beforeEach {
                 let bundle = Bundle(for: type(of: self)).path(forResource: "SummonerJsonModel", ofType: "json")!
                 let json = try! Data(contentsOf: URL(fileURLWithPath: bundle))
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/o0xymoron"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/Pt849emcH5YvWSniZijITtpkgIHxP0s0QfV2nyw1rY_K4w8"),
                           jsonData(json, status: 200))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/400"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/400"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[400]!, options: .prettyPrinted), status: 400))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/401"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/401"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[401]!, options: .prettyPrinted), status: 401))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/403"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/403"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[403]!, options: .prettyPrinted), status: 403))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/404"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/404"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[404]!, options: .prettyPrinted), status: 404))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/405"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/405"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[405]!, options: .prettyPrinted), status: 405))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/415"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/415"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[415]!, options: .prettyPrinted), status: 415))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/429"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/429"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[429]!, options: .prettyPrinted), status: 429))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/500"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/500"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[500]!, options: .prettyPrinted), status: 500))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/502"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/502"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[502]!, options: .prettyPrinted), status: 502))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/503"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/503"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[503]!, options: .prettyPrinted), status: 503))
                 
-                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/504"),
+                self.stub(http(.get, uri: "https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/504"),
                           jsonData(try! JSONSerialization.data(withJSONObject: body[504]!, options: .prettyPrinted), status: 504))
             }
             
-            it("get summoner", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator info", closure: {
+                let viewModel = SpectatorViewModel()
                 
-                viewModel.getSummoner("o0xymoron", complete: { (error) in
+                viewModel.getSpectatorInfo("Pt849emcH5YvWSniZijITtpkgIHxP0s0QfV2nyw1rY_K4w8", complete: { (error) in
                     if error != nil {
                         NSLog("\(error?.localizedDescription ?? "")")
                         expect(error).to(beNil())
                     }
                 })
-                expect(viewModel.summoner).toEventuallyNot(beNil(), timeout: 10)
+                expect(viewModel.specatorModel).toEventuallyNot(beNil(), timeout: 10)
             })
             
-            it("get summoner_bad_request(400)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(400)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("400", complete: { (error) in
+                viewModel.getSpectatorInfo("400", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -102,11 +102,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[400]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(401)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(401)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("401", complete: { (error) in
+                viewModel.getSpectatorInfo("401", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -120,11 +120,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[401]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(403)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(403)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("403", complete: { (error) in
+                viewModel.getSpectatorInfo("403", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -138,11 +138,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[403]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(404)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(404)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("404", complete: { (error) in
+                viewModel.getSpectatorInfo("404", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -156,11 +156,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[404]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(405)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(405)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("405", complete: { (error) in
+                viewModel.getSpectatorInfo("405", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -174,11 +174,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[405]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(415)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(415)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("415", complete: { (error) in
+                viewModel.getSpectatorInfo("415", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -192,11 +192,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[415]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(429)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(429)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("429", complete: { (error) in
+                viewModel.getSpectatorInfo("429", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -210,11 +210,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[429]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(500)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(500)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("500", complete: { (error) in
+                viewModel.getSpectatorInfo("500", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -228,11 +228,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[500]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(502)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(502)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("502", complete: { (error) in
+                viewModel.getSpectatorInfo("502", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -246,11 +246,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[502]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(503)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(503)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("503", complete: { (error) in
+                viewModel.getSpectatorInfo("503", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }
@@ -264,11 +264,11 @@ class SummonerViewModelTests: QuickSpec {
                 expect(errorHandler?.response?.toErrorModel()?.message).toEventually(equal(body[503]!["status"]!["message"] as? String), timeout: 10)
             })
             
-            it("get summoner_bad_request(504)", closure: {
-                let viewModel = SummonerViewModel()
+            it("get spectator_error(504)", closure: {
+                let viewModel = SpectatorViewModel()
                 var errorHandler: MoyaError?
                 
-                viewModel.getSummoner("504", complete: { (error) in
+                viewModel.getSpectatorInfo("504", complete: { (error) in
                     if error != nil {
                         expect(error).toNot(beNil())
                     }

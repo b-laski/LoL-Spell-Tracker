@@ -11,12 +11,11 @@
 		1D7BE51222AECA2100B02558 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE51122AECA2100B02558 /* MainViewController.swift */; };
 		1D7BE51722AECA2500B02558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE51622AECA2500B02558 /* Assets.xcassets */; };
 		1D7BE51A22AECA2500B02558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE51822AECA2500B02558 /* LaunchScreen.storyboard */; };
-		1D7BE54522AED2F900B02558 /* LoL_Spell_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE54422AED2F900B02558 /* LoL_Spell_TrackerUITests.swift */; };
 		1D7BE54922AED32F00B02558 /* ModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE54822AED32F00B02558 /* ModelsTest.swift */; };
 		1D7BE54B22AED88F00B02558 /* SummonerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE54A22AED88F00B02558 /* SummonerModel.swift */; };
 		1D7BE54F22AEDC1600B02558 /* SummonerJsonModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE54E22AEDC1600B02558 /* SummonerJsonModel.json */; };
 		1D7BE55222AEE7C200B02558 /* SpectatorJsonModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE55122AEE7C200B02558 /* SpectatorJsonModel.json */; };
-		1D7BE55422AEE82800B02558 /* SpactatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55322AEE82800B02558 /* SpactatorModel.swift */; };
+		1D7BE55422AEE82800B02558 /* SpectatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55322AEE82800B02558 /* SpectatorModel.swift */; };
 		1D7BE55622AEE8CF00B02558 /* BannedChampionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55522AEE8CF00B02558 /* BannedChampionModel.swift */; };
 		1D7BE55822AEE8F000B02558 /* ObserversModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55722AEE8F000B02558 /* ObserversModel.swift */; };
 		1D7BE55A22AEE91600B02558 /* ParticipantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE55922AEE91600B02558 /* ParticipantModel.swift */; };
@@ -29,20 +28,18 @@
 		1D7BE56D22B3C73300B02558 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56C22B3C73300B02558 /* ErrorModel.swift */; };
 		1D7BE56F22B3C7AC00B02558 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE56E22B3C7AC00B02558 /* Response.swift */; };
 		1D7BE57322B3D6F900B02558 /* ErrorJsonMode.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7BE57222B3D6F900B02558 /* ErrorJsonMode.json */; };
-		3683A4AD5649A71234116E59 /* Pods_LoL_Spell_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFD7AA01831AD0961D932CB /* Pods_LoL_Spell_TrackerUITests.framework */; };
+		1D7BE57522B8008F00B02558 /* SpectatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE57422B8008F00B02558 /* SpectatorViewModel.swift */; };
+		1D7BE57722B800FA00B02558 /* SpectatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE57622B800FA00B02558 /* SpectatorProvider.swift */; };
+		1D7BE57922B806DC00B02558 /* SpectatorViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BE57822B806DC00B02558 /* SpectatorViewModelTest.swift */; };
+		1DC000DB22B817420007C0CC /* SummonerSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC000DA22B817420007C0CC /* SummonerSelectView.swift */; };
+		1DC000DD22B817C00007C0CC /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC000DC22B817C00007C0CC /* GenericView.swift */; };
+		1DC000DF22B817D30007C0CC /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC000DE22B817D30007C0CC /* GenericViewController.swift */; };
 		C4A8690D0E2A74121D775A01 /* Pods_LoL_Spell_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B1F1AFDCE192106CF9B10C /* Pods_LoL_Spell_TrackerTests.framework */; };
 		F656779A509AEAD11FF55309 /* Pods_LoL_Spell_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DC740C350008CFA73F1EE6 /* Pods_LoL_Spell_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1D7BE52122AECA2500B02558 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D7BE50422AECA2100B02558 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D7BE50B22AECA2100B02558;
-			remoteInfo = "LoL Spell Tracker";
-		};
-		1D7BE52C22AECA2500B02558 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1D7BE50422AECA2100B02558 /* Project object */;
 			proxyType = 1;
@@ -61,14 +58,11 @@
 		1D7BE51B22AECA2500B02558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7BE52022AECA2500B02558 /* LoL Spell TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoL Spell TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7BE52622AECA2500B02558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D7BE52B22AECA2500B02558 /* LoL Spell TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoL Spell TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D7BE53122AECA2500B02558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D7BE54422AED2F900B02558 /* LoL_Spell_TrackerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoL_Spell_TrackerUITests.swift; sourceTree = "<group>"; };
 		1D7BE54822AED32F00B02558 /* ModelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTest.swift; sourceTree = "<group>"; };
 		1D7BE54A22AED88F00B02558 /* SummonerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerModel.swift; sourceTree = "<group>"; };
 		1D7BE54E22AEDC1600B02558 /* SummonerJsonModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SummonerJsonModel.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		1D7BE55122AEE7C200B02558 /* SpectatorJsonModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SpectatorJsonModel.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
-		1D7BE55322AEE82800B02558 /* SpactatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpactatorModel.swift; sourceTree = "<group>"; };
+		1D7BE55322AEE82800B02558 /* SpectatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectatorModel.swift; sourceTree = "<group>"; };
 		1D7BE55522AEE8CF00B02558 /* BannedChampionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannedChampionModel.swift; sourceTree = "<group>"; };
 		1D7BE55722AEE8F000B02558 /* ObserversModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserversModel.swift; sourceTree = "<group>"; };
 		1D7BE55922AEE91600B02558 /* ParticipantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantModel.swift; sourceTree = "<group>"; };
@@ -81,6 +75,12 @@
 		1D7BE56C22B3C73300B02558 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		1D7BE56E22B3C7AC00B02558 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		1D7BE57222B3D6F900B02558 /* ErrorJsonMode.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ErrorJsonMode.json; sourceTree = "<group>"; };
+		1D7BE57422B8008F00B02558 /* SpectatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectatorViewModel.swift; sourceTree = "<group>"; };
+		1D7BE57622B800FA00B02558 /* SpectatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectatorProvider.swift; sourceTree = "<group>"; };
+		1D7BE57822B806DC00B02558 /* SpectatorViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectatorViewModelTest.swift; sourceTree = "<group>"; };
+		1DC000DA22B817420007C0CC /* SummonerSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerSelectView.swift; sourceTree = "<group>"; };
+		1DC000DC22B817C00007C0CC /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		1DC000DE22B817D30007C0CC /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		36A964278C58798D5A17B97B /* Pods-LoL Spell TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell TrackerTests/Pods-LoL Spell TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		50351982EE3A78315A69CAD2 /* Pods-LoL Spell Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		7149B5DF64BA3884CB9E5BD0 /* Pods-LoL Spell Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL Spell Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,14 +108,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D7BE52822AECA2500B02558 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3683A4AD5649A71234116E59 /* Pods_LoL_Spell_TrackerUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,7 +116,6 @@
 			children = (
 				1D7BE50E22AECA2100B02558 /* LoL Spell Tracker */,
 				1D7BE52322AECA2500B02558 /* LoL Spell TrackerTests */,
-				1D7BE52E22AECA2500B02558 /* LoL Spell TrackerUITests */,
 				1D7BE50D22AECA2100B02558 /* Products */,
 				A5A5D13400C46293C0953021 /* Pods */,
 				5117E5321CFB5AB27DE54BB1 /* Frameworks */,
@@ -136,7 +127,6 @@
 			children = (
 				1D7BE50C22AECA2100B02558 /* LoL Spell Tracker.app */,
 				1D7BE52022AECA2500B02558 /* LoL Spell TrackerTests.xctest */,
-				1D7BE52B22AECA2500B02558 /* LoL Spell TrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,20 +162,11 @@
 			path = "LoL Spell TrackerTests";
 			sourceTree = "<group>";
 		};
-		1D7BE52E22AECA2500B02558 /* LoL Spell TrackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1D7BE54422AED2F900B02558 /* LoL_Spell_TrackerUITests.swift */,
-				1D7BE53122AECA2500B02558 /* Info.plist */,
-			);
-			path = "LoL Spell TrackerUITests";
-			sourceTree = "<group>";
-		};
 		1D7BE53D22AECA9E00B02558 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				1D7BE54A22AED88F00B02558 /* SummonerModel.swift */,
-				1D7BE55322AEE82800B02558 /* SpactatorModel.swift */,
+				1D7BE55322AEE82800B02558 /* SpectatorModel.swift */,
 				1D7BE55522AEE8CF00B02558 /* BannedChampionModel.swift */,
 				1D7BE55722AEE8F000B02558 /* ObserversModel.swift */,
 				1D7BE55922AEE91600B02558 /* ParticipantModel.swift */,
@@ -199,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				1D7BE56422B03ADA00B02558 /* SummonerViewModel.swift */,
+				1D7BE57422B8008F00B02558 /* SpectatorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -214,6 +196,7 @@
 		1D7BE54022AECAB600B02558 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1D7BE57A22B8167A00B02558 /* SummonerSelectView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				1D7BE56022B0344700B02558 /* NetworkErrors.swift */,
+				1DC000DC22B817C00007C0CC /* GenericView.swift */,
+				1DC000DE22B817D30007C0CC /* GenericViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -238,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				1D7BE56222B039BB00B02558 /* SummonerViewModelTests.swift */,
+				1D7BE57822B806DC00B02558 /* SpectatorViewModelTest.swift */,
 			);
 			path = NetworkManagerTest;
 			sourceTree = "<group>";
@@ -246,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				1D7BE56722B03C7E00B02558 /* SummonerProvider.swift */,
+				1D7BE57622B800FA00B02558 /* SpectatorProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -257,6 +244,14 @@
 				1D7BE56E22B3C7AC00B02558 /* Response.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D7BE57A22B8167A00B02558 /* SummonerSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				1DC000DA22B817420007C0CC /* SummonerSelectView.swift */,
+			);
+			path = SummonerSelectView;
 			sourceTree = "<group>";
 		};
 		5117E5321CFB5AB27DE54BB1 /* Frameworks */ = {
@@ -324,26 +319,6 @@
 			productReference = 1D7BE52022AECA2500B02558 /* LoL Spell TrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1D7BE52A22AECA2500B02558 /* LoL Spell TrackerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D7BE53A22AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell TrackerUITests" */;
-			buildPhases = (
-				89265C3C45D6339550FAF301 /* [CP] Check Pods Manifest.lock */,
-				1D7BE52722AECA2500B02558 /* Sources */,
-				1D7BE52822AECA2500B02558 /* Frameworks */,
-				1D7BE52922AECA2500B02558 /* Resources */,
-				496B36A305CD5964288B9190 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1D7BE52D22AECA2500B02558 /* PBXTargetDependency */,
-			);
-			name = "LoL Spell TrackerUITests";
-			productName = "LoL Spell TrackerUITests";
-			productReference = 1D7BE52B22AECA2500B02558 /* LoL Spell TrackerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -358,11 +333,6 @@
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					1D7BE51F22AECA2500B02558 = {
-						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
-						TestTargetID = 1D7BE50B22AECA2100B02558;
-					};
-					1D7BE52A22AECA2500B02558 = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
 						TestTargetID = 1D7BE50B22AECA2100B02558;
@@ -384,7 +354,6 @@
 			targets = (
 				1D7BE50B22AECA2100B02558 /* LoL Spell Tracker */,
 				1D7BE51F22AECA2500B02558 /* LoL Spell TrackerTests */,
-				1D7BE52A22AECA2500B02558 /* LoL Spell TrackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -406,13 +375,6 @@
 				1D7BE57322B3D6F900B02558 /* ErrorJsonMode.json in Resources */,
 				1D7BE54F22AEDC1600B02558 /* SummonerJsonModel.json in Resources */,
 				1D7BE55222AEE7C200B02558 /* SpectatorJsonModel.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D7BE52922AECA2500B02558 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,34 +433,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell Tracker/Pods-LoL Spell Tracker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		496B36A305CD5964288B9190 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell TrackerUITests/Pods-LoL Spell TrackerUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoL Spell TrackerUITests/Pods-LoL Spell TrackerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4B27EF42F944DCF2587E5959 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,28 +449,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LoL Spell Tracker-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89265C3C45D6339550FAF301 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LoL Spell TrackerUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -578,10 +490,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC000DD22B817C00007C0CC /* GenericView.swift in Sources */,
 				1D7BE54B22AED88F00B02558 /* SummonerModel.swift in Sources */,
 				1D7BE55C22AEE93E00B02558 /* PerksModel.swift in Sources */,
+				1DC000DB22B817420007C0CC /* SummonerSelectView.swift in Sources */,
+				1D7BE57722B800FA00B02558 /* SpectatorProvider.swift in Sources */,
 				1D7BE55822AEE8F000B02558 /* ObserversModel.swift in Sources */,
-				1D7BE55422AEE82800B02558 /* SpactatorModel.swift in Sources */,
+				1DC000DF22B817D30007C0CC /* GenericViewController.swift in Sources */,
+				1D7BE55422AEE82800B02558 /* SpectatorModel.swift in Sources */,
 				1D7BE56822B03C7E00B02558 /* SummonerProvider.swift in Sources */,
 				1D7BE56D22B3C73300B02558 /* ErrorModel.swift in Sources */,
 				1D7BE51222AECA2100B02558 /* MainViewController.swift in Sources */,
@@ -590,6 +506,7 @@
 				1D7BE51022AECA2100B02558 /* AppDelegate.swift in Sources */,
 				1D7BE56522B03ADA00B02558 /* SummonerViewModel.swift in Sources */,
 				1D7BE55A22AEE91600B02558 /* ParticipantModel.swift in Sources */,
+				1D7BE57522B8008F00B02558 /* SpectatorViewModel.swift in Sources */,
 				1D7BE55622AEE8CF00B02558 /* BannedChampionModel.swift in Sources */,
 				1D7BE56122B0344700B02558 /* NetworkErrors.swift in Sources */,
 			);
@@ -601,14 +518,7 @@
 			files = (
 				1D7BE56322B039BB00B02558 /* SummonerViewModelTests.swift in Sources */,
 				1D7BE54922AED32F00B02558 /* ModelsTest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D7BE52722AECA2500B02558 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D7BE54522AED2F900B02558 /* LoL_Spell_TrackerUITests.swift in Sources */,
+				1D7BE57922B806DC00B02558 /* SpectatorViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,11 +529,6 @@
 			isa = PBXTargetDependency;
 			target = 1D7BE50B22AECA2100B02558 /* LoL Spell Tracker */;
 			targetProxy = 1D7BE52122AECA2500B02558 /* PBXContainerItemProxy */;
-		};
-		1D7BE52D22AECA2500B02558 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D7BE50B22AECA2100B02558 /* LoL Spell Tracker */;
-			targetProxy = 1D7BE52C22AECA2500B02558 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -844,51 +749,6 @@
 			};
 			name = Release;
 		};
-		1D7BE53B22AECA2500B02558 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8EACD6692A852015D71948D /* Pods-LoL Spell TrackerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SYC6AKT84F;
-				INFOPLIST_FILE = "LoL Spell TrackerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-TrackerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "LoL Spell Tracker";
-			};
-			name = Debug;
-		};
-		1D7BE53C22AECA2500B02558 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 724F556C3AD2F74E8A3A2665 /* Pods-LoL Spell TrackerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SYC6AKT84F;
-				INFOPLIST_FILE = "LoL Spell TrackerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "TyphoonComapny.LoL-Spell-TrackerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "LoL Spell Tracker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -915,15 +775,6 @@
 			buildConfigurations = (
 				1D7BE53822AECA2500B02558 /* Debug */,
 				1D7BE53922AECA2500B02558 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1D7BE53A22AECA2500B02558 /* Build configuration list for PBXNativeTarget "LoL Spell TrackerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D7BE53B22AECA2500B02558 /* Debug */,
-				1D7BE53C22AECA2500B02558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

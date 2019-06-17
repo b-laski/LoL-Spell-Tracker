@@ -1,50 +1,50 @@
 //
-//  SummonerProvider.swift
+//  SpectatorProvider.swift
 //  LoL Spell Tracker
 //
-//  Created by Bartłomiej Łaski on 11/06/2019.
+//  Created by Bartłomiej Łaski on 17/06/2019.
 //  Copyright © 2019 Bartłomiej Łaski. All rights reserved.
 //
 
 import Moya
 
-public enum SummonerProvider {
-    case getSummoner(String)
+public enum SpectatorProvider {
+    case getSpecator(String)
 }
 
-extension SummonerProvider: TargetType {
+extension SpectatorProvider: TargetType {
     public var baseURL: URL {
         return URL(string: "https://eun1.api.riotgames.com")!
     }
-
+    
     public var path: String {
         switch self {
-        case .getSummoner(let summonerName):
-            return "/lol/summoner/v4/summoners/by-name/\(summonerName)"
+        case .getSpecator(let summonerId):
+            return "/lol/spectator/v4/active-games/by-summoner/\(summonerId)"
         }
     }
-
+    
     public var method: Method {
         switch self {
-        case .getSummoner:
+        case .getSpecator:
             return .get
         }
     }
-
+    
     public var sampleData: Data {
         switch self {
-        case .getSummoner:
+        case .getSpecator:
             return "".utf8Encoded
         }
     }
-
+    
     public var task: Task {
         switch self {
-        case .getSummoner:
+        case .getSpecator:
             return .requestPlain
         }
     }
-
+    
     public var headers: [String : String]? {
         return [ "Origin": "https://developer.riotgames.com",
                  "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
@@ -52,4 +52,3 @@ extension SummonerProvider: TargetType {
         ]
     }
 }
-

@@ -61,7 +61,7 @@ class SpactatorModelTest: QuickSpec {
                     let json = try Data(contentsOf: url)
                     
                     let decode = JSONDecoder()
-                    let model = try decode.decode(SpactatorModel.self, from: json)
+                    let model = try decode.decode(SpectatorModel.self, from: json)
                     
                     expect(model.gameID).to(equal(2200039102))
                     expect(model.gameStartTime).to(equal(1560193772944))

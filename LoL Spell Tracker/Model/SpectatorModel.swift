@@ -1,12 +1,12 @@
 //
-//  SpactatorModel.swift
+//  SpectatorModel.swift
 //  LoL Spell Tracker
 //
 //  Created by Bartłomiej Łaski on 10/06/2019.
 //  Copyright © 2019 Bartłomiej Łaski. All rights reserved.
 //
 
-struct SpactatorModel: Codable {
+struct SpectatorModel: Codable {
     let gameID, gameStartTime: Int?
     let platformID, gameMode: String?
     let mapID: Int?
